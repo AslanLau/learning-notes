@@ -1,0 +1,21 @@
+interface
+
+类实现接口的方法，在编译阶段会进行校验方法的完整性。
+
+1. A class can only extend (subclass) one parent,yet can implements more than one interfaces.
+
+2. About methods:
+ By convention, method names should be a verb in lowercase or a multi-word name that begins with a verb in lowercase, followed by adjectives, nouns, etc.
+
+3. About constructors:
+The compiler automatically provides a no-argument, default constructor for any class without constructors. This default constructor will call the no-argument constructor of the superclass.
+
+If your class has no explicit superclass, then it has an implicit superclass of Object, which does have a no-argument constructor.
+
+4. About arguments passed into methods:
+a. if is primitive data type, variable passed-in is a copy of the data. After the method returns, all parameters are gone, and the variable passed-in is still the one before.
+b. if is reference data type, reference passed-in is the same reference in the RAM. That means, once the object refered is changed, the change remains.
+
+
+
+
